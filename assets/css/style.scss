@@ -1,0 +1,168 @@
+@import url("/assets/font/stylesheet.css");
+
+$primary-color: #262523;
+$secondary-color: #fff9f4;
+
+:root {
+    font-size:16px;
+}
+
+*{
+    color: $primary-color;
+}
+
+body {
+    background: $secondary-color;
+}
+
+header {
+    box-sizing: border-box;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: $primary-color solid 2px;
+    border-bottom: $primary-color solid 2px;
+    padding: 1vw 0 1vw 0;
+
+    img {
+        height: 5vw;
+    }
+}
+
+.first-container {
+    padding: 0 40px 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+    h1,
+    a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-family: 'Helvetica Now Display';
+    }
+
+    >ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: -5px;
+        margin-right: -5px;
+
+        li {
+            padding: 5px;
+        }
+    }
+}
+
+.second-container {
+    padding: 0 40px 0 40px;
+    display: grid;
+
+    >ul {
+        align-items: flex-end;
+        margin-top: -5px;
+        margin-right: -5px;
+        width: 30%;
+
+        a {
+            display: inline-block;
+            padding: 5px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            margin-left: -5px;
+            font-family: 'Helvetica Now Display';
+        }
+    }
+
+    .creative-container {
+        position: relative;
+        display: flex;
+        justify-self: center;
+
+        img {
+            border: 2px solid $primary-color;
+            border-radius: 193.5px 193.5px 0px 0px;
+            aspect-ratio: 9/12;
+            width: 275px;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+            top: -100px;
+        }
+
+        .crea-text,
+        .tive-text {
+            font-family: 'Helvetica Now Display';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6rem;
+            letter-spacing: 0.02em;
+            color: $primary-color;
+            text-transform: uppercase;
+            position: absolute;
+        }
+
+        .crea-text {
+            top: 0;
+            left: -100px;
+        }
+
+        .crea-text::before {
+            content: "Crea";
+            -webkit-text-stroke: 2px $secondary-color;
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            color: rgba(0, 0, 0, 0);
+        }
+
+        .tive-text {
+            top: 120px;
+            left: 175px;
+        }
+
+        .tive-text::before {
+            content: "tive";
+            -webkit-text-stroke: 2px $secondary-color;
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+.third-container {
+    padding: 0 40px 0 40px;
+    display: grid;
+
+    p {
+        font-family: 'Helvetica Now Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        color: $primary-color;
+        width:50%;
+    }
+
+    img{
+        justify-self: flex-end;
+        position:relative;
+        top:-100%;
+    }
+}
