@@ -9,6 +9,7 @@
 
 body {
   background: #fff9f4;
+  padding-bottom: 10px;
 }
 
 nav {
@@ -76,10 +77,8 @@ header .navbar_mobile {
   display: grid;
 }
 .second-container > ul {
-  align-items: flex-end;
-  margin-right: -5px;
   position: relative;
-  top: 130px;
+  top: 100px;
   width: 30%;
 }
 .second-container > ul a {
@@ -125,7 +124,8 @@ header .navbar_mobile {
   top: 100px;
   left: -100px;
 }
-.second-container .creative-container .crea-text::before, .second-container .creative-container .tive-text::before {
+.second-container .creative-container .crea-text::before,
+.second-container .creative-container .tive-text::before {
   content: "Crea";
   -webkit-text-stroke: 2px #fff9f4;
   position: absolute;
@@ -145,6 +145,7 @@ header .navbar_mobile {
 .third-container {
   padding: 0 40px 0 40px;
   display: grid;
+  height: 100%;
 }
 .third-container p {
   font-family: "Helvetica Now Display";
@@ -164,6 +165,11 @@ header .navbar_mobile {
 }
 
 @media (max-width: 1024px) {
+  .second-container > ul {
+    position: relative;
+    top: 0px;
+    width: 30%;
+  }
   .second-container .creative-container {
     top: -100px;
   }
@@ -182,6 +188,21 @@ header .navbar_mobile {
     top: 167px;
     left: 125px;
   }
+  .third-container {
+    padding: 0 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .third-container p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .third-container img {
+    width: 3rem;
+    margin-top: 30px;
+  }
 }
 @media (max-width: 600px) {
   .navbar_mobile {
@@ -193,9 +214,10 @@ header .navbar_mobile {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
+    height: 100vh;
   }
   .navbar_mobile a {
     font-family: "Inter", sans-serif;
@@ -212,17 +234,14 @@ header .navbar_mobile {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: auto;
-  }
-  .navbar_mobile .hidelink ul {
-    width: 100%;
+    position: relative;
+    align-items: end;
   }
   .navbar_mobile .hidelink li {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 30px;
-    padding-bottom: 10px;
     text-transform: uppercase;
+    padding: 10px;
+    text-align: end;
+    background: red;
   }
   .navbar_mobile .hidelinkfalse {
     visibility: visible;
@@ -249,6 +268,9 @@ header .navbar_mobile {
   }
   header .navbar_mobile_grp .navbar_mobile_button {
     width: 30px;
+  }
+  header img {
+    height: 6.5vw;
   }
   .first-container h1 {
     font-size: 14px;
@@ -280,23 +302,8 @@ header .navbar_mobile {
     top: 167px;
     left: 125px;
   }
-  .second-container .creative-container .crea-text::before, .second-container .creative-container .tive-text::before {
+  .second-container .creative-container .crea-text::before,
+.second-container .creative-container .tive-text::before {
     -webkit-text-stroke: 1px #fff9f4;
-  }
-  .third-container {
-    padding: 0 40px 0 40px;
-    display: grid;
-  }
-  .third-container p {
-    width: 100%;
-    text-align: justify;
-    font-size: 14px;
-  }
-  .third-container img {
-    justify-self: center;
-    align-items: flex-end;
-    position: relative;
-    top: 200%;
-    width: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
