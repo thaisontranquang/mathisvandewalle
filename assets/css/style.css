@@ -9,9 +9,6 @@
 
 body {
   background: #fff9f4;
-  padding-bottom: 10px;
-  max-height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -22,15 +19,15 @@ nav {
 
 .close-menu-btn {
   display: none;
-  width: 22px;
+  width: 1.375rem;
   justify-self: flex-end;
-  margin: 30px;
+  margin: 1.875rem;
   position: absolute;
 }
 
 header {
   box-sizing: border-box;
-  margin: 40px;
+  margin: 2.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -49,7 +46,7 @@ header .navbar_mobile {
 }
 
 .first-container {
-  padding: 0 40px 0 40px;
+  padding: 0 2.5rem 0 2.5rem;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -60,8 +57,8 @@ header .navbar_mobile {
 .first-container a {
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   font-family: "Helvetica Now Display";
@@ -70,39 +67,39 @@ header .navbar_mobile {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: -5px;
-  margin-right: -5px;
+  margin-top: -0.313rem;
+  margin-right: -0.313rem;
 }
 .first-container > ul li {
-  padding: 5px;
+  padding: 0.313rem;
 }
 
 .second-container {
-  padding: 0 40px 0 40px;
+  padding: 0 2.5rem 0 2.5rem;
   display: grid;
 }
 .second-container > ul {
   position: relative;
-  top: 100px;
+  top: 6.25rem;
   width: 30%;
 }
 .second-container > ul a {
   display: inline-block;
-  padding: 5px;
+  padding: 0.313rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 0.02em;
-  margin-left: -5px;
+  margin-left: -0.313rem;
   font-family: "Helvetica Now Display";
 }
 .second-container .creative-container {
   position: relative;
   display: flex;
   justify-self: center;
-  top: -120px;
-  margin: 20px;
+  top: -7.5rem;
+  margin: 1.25rem;
 }
 .second-container .creative-container img {
   border: 2px solid #262523;
@@ -126,8 +123,8 @@ header .navbar_mobile {
   position: absolute;
 }
 .second-container .creative-container .crea-text {
-  top: 100px;
-  left: -100px;
+  top: 6.25rem;
+  left: -6.25rem;
 }
 .second-container .creative-container .crea-text::before,
 .second-container .creative-container .tive-text::before {
@@ -140,26 +137,26 @@ header .navbar_mobile {
   color: rgba(0, 0, 0, 0);
 }
 .second-container .creative-container .tive-text {
-  top: 220px;
-  left: 175px;
+  top: 13.75rem;
+  left: 10.938rem;
 }
 .second-container .creative-container .tive-text::before {
   content: "tive";
 }
 
 .third-container {
-  padding: 0 40px 0 40px;
+  padding: 0 2.5rem 0 2.5rem;
   display: grid;
   height: 100%;
   position: relative;
-  top: -50px;
+  top: -3.125rem;
 }
 .third-container p {
   font-family: "Helvetica Now Display";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 0.1em;
   color: #262523;
   width: 50%;
@@ -178,7 +175,7 @@ header .navbar_mobile {
     width: 30%;
   }
   .second-container .creative-container {
-    top: -100px;
+    top: -6.25rem;
   }
   .second-container .creative-container img {
     width: 12rem;
@@ -193,10 +190,10 @@ header .navbar_mobile {
   }
   .second-container .creative-container .tive-text {
     top: 167px;
-    left: 125px;
+    left: 11.5rem;
   }
   .third-container {
-    padding: 0 40px 0 40px;
+    padding: 0 2.5rem 0 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,7 +203,7 @@ header .navbar_mobile {
   }
   .third-container p {
     width: 100%;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .third-container img {
     width: 3rem;
@@ -233,7 +230,7 @@ header .navbar_mobile {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: lowercase;
     text-decoration: none;
     padding: 0;
@@ -252,11 +249,11 @@ header .navbar_mobile {
     text-transform: uppercase;
     padding: 10px;
     text-align: end;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .navbar_mobile .hidelink {
     height: 70vh;
-    padding-top: 150px;
+    padding-top: 13.125rem;
   }
   .navbar_mobile .contact-hide {
     height: 30vh;
@@ -264,7 +261,7 @@ header .navbar_mobile {
   }
   .navbar_mobile .contact-hide li {
     text-transform: lowercase;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .navbar_mobile .hidelinkfalse {
     visibility: visible;
@@ -289,19 +286,19 @@ header .navbar_mobile {
     width: max-content;
   }
   header .navbar_mobile_grp .navbar_mobile_button {
-    width: 30px;
+    width: 1.875rem;
   }
   header img {
     height: 6.5vw;
   }
   .first-container h1 {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .first-container > ul {
     display: none;
   }
   .second-container {
-    padding: 40px;
+    padding: 2.5rem;
   }
   .second-container > ul {
     display: none;
@@ -317,12 +314,12 @@ header .navbar_mobile {
     font-size: 3rem;
   }
   .second-container .creative-container .crea-text {
-    top: 80px;
-    left: -65px;
+    top: 5rem;
+    left: -4.063rem;
   }
   .second-container .creative-container .tive-text {
-    top: 167px;
-    left: 125px;
+    top: 10.438rem;
+    left: 11.5rem;
   }
   .second-container .creative-container .crea-text::before,
 .second-container .creative-container .tive-text::before {
