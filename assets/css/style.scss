@@ -14,6 +14,11 @@ $secondary-color: #fff9f4;
 body {
     background: $secondary-color;
     padding-bottom: 10px;
+    max-height:100vh;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+
 }
 
 nav {
@@ -25,6 +30,7 @@ nav {
     width: 22px;
     justify-self: flex-end;
     margin: 30px;
+    position:absolute;
 }
 
 header {
@@ -232,7 +238,8 @@ header {
 
         img {
             width: 3rem;
-            margin-top: 30px;
+            position:absolute;
+            top:95vh;
         }
     }
 
@@ -264,21 +271,36 @@ header {
             padding: 0;
         }
 
-        .hidelink {
+        .hidelink, .contact-hide {
             opacity: 0;
             visibility: hidden;
             display: flex;
             flex-direction: column;
             margin: auto;
-            position: relative;
             align-items: end;
+            position:relative;
+            justify-content: center;
 
 
             li {
                 text-transform: uppercase;
                 padding: 10px;
                 text-align: end;
-                background: red;
+                font-size:24px;
+            }
+        }
+
+        .hidelink{
+            height:70vh;
+            padding-top:150px;
+        }
+
+        .contact-hide{
+            height:30vh;
+            align-items: center;
+            li{
+                text-transform:lowercase;
+                font-size:16px;
             }
         }
 
@@ -286,7 +308,6 @@ header {
             visibility: visible;
             transition: 1s;
             opacity: 1;
-            position: relative;
         }
     }
 

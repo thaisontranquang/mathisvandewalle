@@ -10,6 +10,10 @@
 body {
   background: #fff9f4;
   padding-bottom: 10px;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -21,6 +25,7 @@ nav {
   width: 22px;
   justify-self: flex-end;
   margin: 30px;
+  position: absolute;
 }
 
 header {
@@ -201,7 +206,8 @@ header .navbar_mobile {
   }
   .third-container img {
     width: 3rem;
-    margin-top: 30px;
+    position: absolute;
+    top: 95vh;
   }
 }
 @media (max-width: 600px) {
@@ -228,26 +234,38 @@ header .navbar_mobile {
     text-decoration: none;
     padding: 0;
   }
-  .navbar_mobile .hidelink {
+  .navbar_mobile .hidelink, .navbar_mobile .contact-hide {
     opacity: 0;
     visibility: hidden;
     display: flex;
     flex-direction: column;
     margin: auto;
-    position: relative;
     align-items: end;
+    position: relative;
+    justify-content: center;
   }
-  .navbar_mobile .hidelink li {
+  .navbar_mobile .hidelink li, .navbar_mobile .contact-hide li {
     text-transform: uppercase;
     padding: 10px;
     text-align: end;
-    background: red;
+    font-size: 24px;
+  }
+  .navbar_mobile .hidelink {
+    height: 70vh;
+    padding-top: 150px;
+  }
+  .navbar_mobile .contact-hide {
+    height: 30vh;
+    align-items: center;
+  }
+  .navbar_mobile .contact-hide li {
+    text-transform: lowercase;
+    font-size: 16px;
   }
   .navbar_mobile .hidelinkfalse {
     visibility: visible;
     transition: 1s;
     opacity: 1;
-    position: relative;
   }
   .closedmenu {
     height: 0;
