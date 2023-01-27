@@ -211,7 +211,7 @@ header .navbar_mobile {
   .third-container img {
     width: 3rem;
     position: absolute;
-    top: 95vh;
+    top: 93vh;
   }
 }
 @media (max-width: 600px) {
